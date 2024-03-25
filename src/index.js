@@ -1,8 +1,10 @@
 import 'dotenv/config'
-import * as animal from './animal.js'
+import * as api from './callApi.js'
 
-function main() {
-  animal.getCats()
-}
+/**
+ * Use api.get to obtain supported information searches.
+ * 
+ * See the function javadoc for supported searches.
+ */
 
-main()
+api.get(2, "John Cena")
